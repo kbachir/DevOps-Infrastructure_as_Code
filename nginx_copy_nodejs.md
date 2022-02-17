@@ -1,3 +1,4 @@
+```
 nginx:
 
 # `sudo nano install_nginx.yml`
@@ -53,3 +54,4 @@ nodejs:
         - npm
   - name: running nnpm start
     shell: cd app; npm install; screen -d -m npm start
+```
