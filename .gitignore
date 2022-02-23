@@ -1,1 +1,7 @@
 .vagrant/
+.terraform.lock.hcl
+.terraform/
+terraform-provider-aws_v4.2.0_x5.exe
+variable.tf
+terraform.tfstate.backup
+terraform.tfstate

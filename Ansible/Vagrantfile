@@ -18,7 +18,7 @@
        
        controller.vm.network :private_network, ip: "192.168.33.12"
 
-       controller.vm.synced_folder "app/", "/home/vagrant/app/"
+       #controller.vm.synced_folder "app/", "/home/vagrant/app/"
        
        # config.hostsupdater.aliases = ["development.controller"] 
        
@@ -41,16 +41,16 @@
       end
       
     # creating second VM called db
-      config.vm.define "db" do |db|
+#      config.vm.define "db" do |db|
         
-        db.vm.box = "bento/ubuntu-18.04"
+#        db.vm.box = "bento/ubuntu-18.04"
         
-        db.vm.hostname = 'db'
+#        db.vm.hostname = 'db'
         
-        db.vm.network :private_network, ip: "192.168.33.11"
+#        db.vm.network :private_network, ip: "192.168.33.11"
         
         #config.hostsupdater.aliases = ["development.db"]     
-      end
+#      end
     
     
     end

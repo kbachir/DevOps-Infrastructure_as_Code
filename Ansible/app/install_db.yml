@@ -1,0 +1,18 @@
+---
+
+- hosts: db
+  gather_facts: yes
+  become: true
+  tasks:
+  - name: install mongodb
+    apt:
+      pkg:
+        - mongodb
+  - name: set reverse proxy config
+    lineinfile:
+      path: /etc/mongodb.conf
+      regexp: '^bind_ip = '
+      line: 'bind_ip = 0.0.0.0'
+  - name: enable mongodb
+    shell:
+      systemctl enable mongodb; systemctl restart mongodb
