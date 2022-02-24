@@ -343,3 +343,5 @@ sudo ansible-playbook provision_instances.yml --ask-vault-pass -vvv
 scp -i <path to your access key>.pem -r <origin> ubuntu@ec2-3-250-15-190.eu-west-1.compute.amazonaws.com:~
 ssh-keygen -t rsa -b 4096
 ```
+
+test 1
